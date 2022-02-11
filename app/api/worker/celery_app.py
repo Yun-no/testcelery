@@ -1,6 +1,5 @@
 from celery import Celery
 from celery.utils.log import get_task_logger
-from app.api.model.bring_models import BringOrder
 from time import sleep
 
 celery = Celery('tasks', broker='amqp://guest:guest@127.0.0.1:5672//')
